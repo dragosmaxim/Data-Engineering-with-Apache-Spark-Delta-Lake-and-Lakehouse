@@ -1,0 +1,9 @@
+{
+	"name": "traininglakehousedfdr",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1eb00b1e-66d9-4e9c-82d0-b60279d10e86",
+		"tenantId": "96d4149c-e0ae-4e50-b4fe-b15e3774feff"
+	}
+}
