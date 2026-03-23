@@ -14,6 +14,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"method": "GET",
 					"url": "https://trainingkvdr100.vault.azure.net/secrets/ADLSKEY/5adea5bd491c44db95a53a7986a9d613?api-version=7.0",
@@ -41,6 +42,7 @@
 					"secureOutput": false,
 					"secureInput": false
 				},
+				"userProperties": [],
 				"typeProperties": {
 					"notebookPath": "/Users/maximd20.md@gmail.com/electroniz_curation_notebook",
 					"baseParameters": {
@@ -102,48 +104,37 @@
 		],
 		"parameters": {
 			"STORAGE_ACCOUNT": {
-				"type": "string",
-				"defaultValue": "traininglakehousedr"
+				"type": "string"
 			},
 			"BRONZE_LAYER_NAMESPACE": {
-				"type": "string",
-				"defaultValue": "bronze"
+				"type": "string"
 			},
 			"SILVER_LAYER_NAMESPACE": {
-				"type": "string",
-				"defaultValue": "silver"
+				"type": "string"
 			},
 			"STORE_SALES_FOLDER": {
-				"type": "string",
-				"defaultValue": "sales"
+				"type": "string"
 			},
 			"ADLS_FOLDER": {
-				"type": "string",
-				"defaultValue": "2021/04/28/18"
+				"type": "string"
 			},
 			"TABLE_LIST": {
-				"type": "string",
-				"defaultValue": "products,store_customers,store_orders"
+				"type": "string"
 			},
 			"CURRENCY_LIST": {
-				"type": "string",
-				"defaultValue": "CAD,INR,EUR"
+				"type": "string"
 			},
 			"CURRENCY_FOLDER": {
-				"type": "string",
-				"defaultValue": "currency"
+				"type": "string"
 			},
 			"GEOLOCATION_FOLDER": {
-				"type": "string",
-				"defaultValue": "geolocation"
+				"type": "string"
 			},
 			"LOGS_FOLDER": {
-				"type": "string",
-				"defaultValue": "logs"
+				"type": "string"
 			},
 			"ECOMM_FOLDER": {
-				"type": "string",
-				"defaultValue": "esalesns/esaleshub/*/*/*/*/*/*/*"
+				"type": "string"
 			}
 		},
 		"annotations": []
