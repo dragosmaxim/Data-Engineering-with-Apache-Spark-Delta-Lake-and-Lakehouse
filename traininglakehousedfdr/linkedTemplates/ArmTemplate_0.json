@@ -268,48 +268,37 @@
 				},
 				"parameters": {
 					"STORAGE_ACCOUNT": {
-						"type": "string",
-						"defaultValue": "traininglakehousedr"
+						"type": "string"
 					},
 					"BRONZE_LAYER_NAMESPACE": {
-						"type": "string",
-						"defaultValue": "bronze"
+						"type": "string"
 					},
 					"SILVER_LAYER_NAMESPACE": {
-						"type": "string",
-						"defaultValue": "silver"
+						"type": "string"
 					},
 					"STORE_SALES_FOLDER": {
-						"type": "string",
-						"defaultValue": "sales"
+						"type": "string"
 					},
 					"ADLS_FOLDER": {
-						"type": "string",
-						"defaultValue": "2021/04/28/18"
+						"type": "string"
 					},
 					"TABLE_LIST": {
-						"type": "string",
-						"defaultValue": "products,store_customers,store_orders"
+						"type": "string"
 					},
 					"CURRENCY_LIST": {
-						"type": "string",
-						"defaultValue": "CAD,INR,EUR"
+						"type": "string"
 					},
 					"CURRENCY_FOLDER": {
-						"type": "string",
-						"defaultValue": "currency"
+						"type": "string"
 					},
 					"GEOLOCATION_FOLDER": {
-						"type": "string",
-						"defaultValue": "geolocation"
+						"type": "string"
 					},
 					"LOGS_FOLDER": {
-						"type": "string",
-						"defaultValue": "logs"
+						"type": "string"
 					},
 					"ECOMM_FOLDER": {
-						"type": "string",
-						"defaultValue": "esalesns/esaleshub/*/*/*/*/*/*/*"
+						"type": "string"
 					}
 				},
 				"annotations": []
