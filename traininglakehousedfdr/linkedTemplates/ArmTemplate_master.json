@@ -7,9 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "traininglakehousedfdr"
 		},
-		"Curation Spark Cluster_accessToken": {
+		"CurationSparkCluster_v2_accessToken": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'Curation Spark Cluster'"
+			"metadata": "Secure string for 'accessToken' of 'CurationSparkCluster_v2'"
 		},
 		"salesdbsource_password": {
 			"type": "secureString",
@@ -23,7 +23,7 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'websitetrackinglogs'"
 		},
-		"Curation Spark Cluster_properties_typeProperties_existingClusterId": {
+		"CurationSparkCluster_v2_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "0323-090341-768nlnto"
 		},
@@ -78,8 +78,8 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
-					"Curation Spark Cluster_accessToken": {
-						"value": "[parameters('Curation Spark Cluster_accessToken')]"
+					"CurationSparkCluster_v2_accessToken": {
+						"value": "[parameters('CurationSparkCluster_v2_accessToken')]"
 					},
 					"salesdbsource_password": {
 						"value": "[parameters('salesdbsource_password')]"
@@ -90,8 +90,8 @@
 					"websitetrackinglogs_connectionString": {
 						"value": "[parameters('websitetrackinglogs_connectionString')]"
 					},
-					"Curation Spark Cluster_properties_typeProperties_existingClusterId": {
-						"value": "[parameters('Curation Spark Cluster_properties_typeProperties_existingClusterId')]"
+					"CurationSparkCluster_v2_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('CurationSparkCluster_v2_properties_typeProperties_existingClusterId')]"
 					},
 					"httpsource_properties_typeProperties_url": {
 						"value": "[parameters('httpsource_properties_typeProperties_url')]"

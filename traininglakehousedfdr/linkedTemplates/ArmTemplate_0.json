@@ -7,9 +7,9 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "traininglakehousedfdr"
 		},
-		"Curation Spark Cluster_accessToken": {
+		"CurationSparkCluster_v2_accessToken": {
 			"type": "secureString",
-			"metadata": "Secure string for 'accessToken' of 'Curation Spark Cluster'"
+			"metadata": "Secure string for 'accessToken' of 'CurationSparkCluster_v2'"
 		},
 		"salesdbsource_password": {
 			"type": "secureString",
@@ -23,7 +23,7 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'connectionString' of 'websitetrackinglogs'"
 		},
-		"Curation Spark Cluster_properties_typeProperties_existingClusterId": {
+		"CurationSparkCluster_v2_properties_typeProperties_existingClusterId": {
 			"type": "string",
 			"defaultValue": "0323-090341-768nlnto"
 		},
@@ -57,7 +57,7 @@
 	},
 	"resources": [
 		{
-			"name": "[concat(parameters('factoryName'), '/Curation Spark Cluster')]",
+			"name": "[concat(parameters('factoryName'), '/CurationSparkCluster_v2')]",
 			"type": "Microsoft.DataFactory/factories/linkedServices",
 			"apiVersion": "2018-06-01",
 			"properties": {
@@ -67,9 +67,9 @@
 					"domain": "https://adb-7405617975267009.9.azuredatabricks.net",
 					"accessToken": {
 						"type": "SecureString",
-						"value": "[parameters('Curation Spark Cluster_accessToken')]"
+						"value": "[parameters('CurationSparkCluster_v2_accessToken')]"
 					},
-					"existingClusterId": "[parameters('Curation Spark Cluster_properties_typeProperties_existingClusterId')]"
+					"existingClusterId": "[parameters('CurationSparkCluster_v2_properties_typeProperties_existingClusterId')]"
 				}
 			},
 			"dependsOn": []
@@ -258,7 +258,7 @@
 							}
 						},
 						"linkedServiceName": {
-							"referenceName": "Curation Spark Cluster",
+							"referenceName": "CurationSparkCluster_v2",
 							"type": "LinkedServiceReference"
 						}
 					}
@@ -304,7 +304,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/Curation Spark Cluster')]"
+				"[concat(variables('factoryId'), '/linkedServices/CurationSparkCluster_v2')]"
 			]
 		},
 		{

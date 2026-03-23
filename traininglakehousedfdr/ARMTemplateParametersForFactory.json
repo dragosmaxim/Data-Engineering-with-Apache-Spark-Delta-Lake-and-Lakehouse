@@ -5,7 +5,7 @@
 		"factoryName": {
 			"value": "traininglakehousedfdr"
 		},
-		"Curation Spark Cluster_accessToken": {
+		"CurationSparkCluster_v2_accessToken": {
 			"value": ""
 		},
 		"salesdbsource_password": {
@@ -17,7 +17,7 @@
 		"websitetrackinglogs_connectionString": {
 			"value": ""
 		},
-		"Curation Spark Cluster_properties_typeProperties_existingClusterId": {
+		"CurationSparkCluster_v2_properties_typeProperties_existingClusterId": {
 			"value": "0323-090341-768nlnto"
 		},
 		"httpsource_properties_typeProperties_url": {
