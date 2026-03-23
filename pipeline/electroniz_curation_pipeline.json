@@ -97,7 +97,7 @@
 					}
 				},
 				"linkedServiceName": {
-					"referenceName": "Curation Spark Cluster",
+					"referenceName": "CurationSparkCluster_v2",
 					"type": "LinkedServiceReference"
 				}
 			}
