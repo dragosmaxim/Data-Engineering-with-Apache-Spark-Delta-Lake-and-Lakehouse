@@ -181,7 +181,7 @@
 							"url": "https://trainingkvdr100.vault.azure.net/secrets/ADLSKEY/5adea5bd491c44db95a53a7986a9d613?api-version=7.0",
 							"authentication": {
 								"type": "MSI",
-								"resource": "https://vault.azure.net."
+								"resource": "https://vault.azure.net"
 							}
 						}
 					},
