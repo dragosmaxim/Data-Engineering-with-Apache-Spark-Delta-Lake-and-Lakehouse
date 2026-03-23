@@ -1,0 +1,119 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "traininglakehousedfdr"
+		},
+		"Curation Spark Cluster_accessToken": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accessToken' of 'Curation Spark Cluster'"
+		},
+		"salesdbsource_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'salesdbsource'"
+		},
+		"traininglakehousedr_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'traininglakehousedr'"
+		},
+		"websitetrackinglogs_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'websitetrackinglogs'"
+		},
+		"Curation Spark Cluster_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "0323-090341-768nlnto"
+		},
+		"httpsource_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/PacktPublishing/Data-Engineering-with-Apache-Spark-Delta-Lake-and-Lakehouse/main/project/prep/iplocation/IP2LOCATION-LITE-DB1.CSV"
+		},
+		"restsource_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://v6.exchangerate-api.com/v6/6588f00262f98efc5fb94a5b/latest/"
+		},
+		"salesdbsource_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "salesdb99x.database.windows.net"
+		},
+		"salesdbsource_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "salesdb"
+		},
+		"salesdbsource_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "salesadmin"
+		},
+		"traininglakehousedr_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://traininglakehousedr.dfs.core.windows.net/"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "traininglakehousedfdr_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"Curation Spark Cluster_accessToken": {
+						"value": "[parameters('Curation Spark Cluster_accessToken')]"
+					},
+					"salesdbsource_password": {
+						"value": "[parameters('salesdbsource_password')]"
+					},
+					"traininglakehousedr_accountKey": {
+						"value": "[parameters('traininglakehousedr_accountKey')]"
+					},
+					"websitetrackinglogs_connectionString": {
+						"value": "[parameters('websitetrackinglogs_connectionString')]"
+					},
+					"Curation Spark Cluster_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('Curation Spark Cluster_properties_typeProperties_existingClusterId')]"
+					},
+					"httpsource_properties_typeProperties_url": {
+						"value": "[parameters('httpsource_properties_typeProperties_url')]"
+					},
+					"restsource_properties_typeProperties_url": {
+						"value": "[parameters('restsource_properties_typeProperties_url')]"
+					},
+					"salesdbsource_properties_typeProperties_server": {
+						"value": "[parameters('salesdbsource_properties_typeProperties_server')]"
+					},
+					"salesdbsource_properties_typeProperties_database": {
+						"value": "[parameters('salesdbsource_properties_typeProperties_database')]"
+					},
+					"salesdbsource_properties_typeProperties_userName": {
+						"value": "[parameters('salesdbsource_properties_typeProperties_userName')]"
+					},
+					"traininglakehousedr_properties_typeProperties_url": {
+						"value": "[parameters('traininglakehousedr_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		}
+	]
+}
